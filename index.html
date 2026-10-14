@@ -2,16 +2,56 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="面向设计师的 Cursor + GitHub 网页开发培训课件：从本地设计到测试部署与正式上线。"
+      content="面向设计师的 Antigravity IDE + GitHub 网页开发培训课件：从本地设计到测试部署与正式上线。"
     />
-    <title>从设计到上线 · Cursor + GitHub 培训</title>
+    <title>从设计到上线 · Antigravity IDE + GitHub 培训</title>
+    <link rel="stylesheet" href="./src/index.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div class="shell">
+      <header class="topbar">
+        <button
+          type="button"
+          class="menu-btn"
+          aria-label="打开或关闭导航"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <a href="#/" class="brand">
+          <span class="brand-mark">AG</span>
+          <span class="brand-text">
+            <strong>从设计到上线</strong>
+            <em>Antigravity IDE + GitHub 培训</em>
+          </span>
+        </a>
+      </header>
+
+      <button type="button" class="backdrop" aria-label="关闭菜单" style="display: none;"></button>
+
+      <aside class="sidebar">
+        <p class="sidebar-label">章节</p>
+        <nav id="sidebar-nav">
+          <a href="#/" class="nav-home active">概览</a>
+          <a href="#prepare"><span>01</span>准备工具与账号</a>
+          <a href="#design"><span>02</span>在 Antigravity IDE 中设计网页</a>
+          <a href="#github"><span>03</span>用 IDE 将代码发布到 GitHub</a>
+          <a href="#preview"><span>04</span>部署测试环境</a>
+          <a href="#launch"><span>05</span>正式上线</a>
+        </nav>
+      </aside>
+
+      <main class="main" id="app-root">
+        <!-- 页面内容由脚本根据路由动态渲染 -->
+      </main>
+    </div>
+
+    <!-- 章节数据与应用逻辑（纯原生 JS，支持本地双击直接打开） -->
+    <script src="./src/data/chapters.js"></script>
+    <script src="./src/app.js"></script>
   </body>
 </html>
