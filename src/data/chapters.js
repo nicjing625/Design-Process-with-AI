@@ -3,15 +3,26 @@ window.CHAPTERS = [
     slug: 'prepare',
     number: '01',
     title: '准备工具与账号',
-    summary: '先备好 Antigravity IDE 和 GitHub，后面的 AI 辅助设计、云端托管和发布上线才接得上。',
+    summary: '先选好适合的 AI IDE 工具并准备好 GitHub 账号，后面的 AI 辅助设计、云端托管和发布上线才接得上。',
     blocks: [
       {
         type: 'lead',
-        text: '开始前只需要两样核心工具：Antigravity IDE（用 AI 设计并构建网页）和 GitHub（在云端存代码与协作）。下面只看关键操作。',
+        text: '开始前只需要两样核心工具：AI 编程助手（用自然语言设计并构建网页）和 GitHub（在云端存代码与协作）。下面先选择工具并完成关键操作。',
       },
       {
         type: 'step',
         number: '1',
+        title: '选择适合你的 AI IDE 产品',
+        body: '目前主流的 AI 原生编程工具有 Claude Code、Antigravity、Cursor 和 Trae 等。对于网页设计与原型落地，各有其优势特点。设计师可以根据团队技术栈、使用习惯和预算进行选择（本教程后续以 Antigravity 为例展开完整演示）。',
+      },
+      {
+        type: 'screenshot',
+        id: 'step-00',
+        caption: '主流 AI IDE 产品选型参考：Claude Code、Antigravity、Cursor 与 Trae',
+      },
+      {
+        type: 'step',
+        number: '2',
         title: '安装并启动 Antigravity IDE',
         body: '下载并安装 Antigravity IDE 安装包。macOS 用户将应用拖进「应用程序」文件夹后启动即可。',
       },
@@ -22,7 +33,7 @@ window.CHAPTERS = [
       },
       {
         type: 'step',
-        number: '2',
+        number: '3',
         title: '登录 Antigravity IDE 账号',
         body: '首次打开按界面指引登录账号，开启 AI 智能设计助手与项目工作区。',
       },
@@ -38,7 +49,7 @@ window.CHAPTERS = [
       },
       {
         type: 'step',
-        number: '3',
+        number: '4',
         title: '注册 GitHub 并创建仓库',
         body: '打开 github.com 注册并登录。右上角进入 New repository，用英文给仓库起名（例如 my-website），创建即可。后续将通过 IDE 直接将代码推送到此仓库。',
       },
@@ -67,6 +78,17 @@ window.CHAPTERS = [
       {
         type: 'step',
         number: '1',
+        title: '在本地电脑创建项目文件夹',
+        body: '在本地电脑中新建一个专门的项目文件夹（例如 Design Process with AI），作为后续编写页面代码、存放图片素材与同步 Git 的工作根目录。',
+      },
+      {
+        type: 'screenshot',
+        id: 'step-06',
+        caption: '在本地电脑中创建并查看项目工作文件夹',
+      },
+      {
+        type: 'step',
+        number: '2',
         title: '在 IDE 中打开本地项目',
         body: '在 Antigravity IDE 中选择打开文件夹，载入你的项目目录。打开后，左侧工作区会显示当前项目名称与文件树。',
       },
@@ -82,7 +104,7 @@ window.CHAPTERS = [
       },
       {
         type: 'step',
-        number: '2',
+        number: '3',
         title: '用一句话说明设计需求',
         body: '在 IDE 的 AI 聊天框里写清：给谁看、什么视觉风格、版面结构、色彩与不要什么。一次说清核心设计点，AI 出图和出代码会更准确。',
       },
@@ -93,18 +115,18 @@ window.CHAPTERS = [
       },
       {
         type: 'step',
-        number: '3',
+        number: '4',
         title: '让 AI 自动生成页面结构与样式',
         body: '发送 Prompt 后，Antigravity IDE 会自动在项目中生成 HTML、CSS 或组件代码。你可以查看它列出的改动预览，确认方向符合预期后再接受。',
       },
       {
         type: 'screenshot',
-        id: 'step-06',
-        caption: '用 Prompt 让 IDE 的 AI 助手生成或修改页面',
+        id: 'step-0203',
+        caption: '用 Prompt 让 IDE 的 AI 助手生成页面结构与样式并查看代码改动',
       },
       {
         type: 'step',
-        number: '4',
+        number: '5',
         title: '实时本地预览',
         body: '在浏览器中打开本地页面或启动预览。像平时检查设计稿一样，仔细核对排版间距、字体层级与移动端响应式效果。',
       },
@@ -115,7 +137,7 @@ window.CHAPTERS = [
       },
       {
         type: 'step',
-        number: '5',
+        number: '6',
         title: '对照画面继续微调',
         body: '预览不满意时，直接在 IDE 对话框里指明要改的位置，例如「标题字重增加一点」「手机端卡片改成上下排列」。IDE 修改完成后刷新页面即可查看。',
       },
@@ -149,6 +171,11 @@ window.CHAPTERS = [
         body: '在 IDE 的源代码管理面板中，点击「发布到 GitHub」（Publish to GitHub）或输入改动说明后点击同步。IDE 会自动将本地设计好的代码上传至云端仓库。',
       },
       {
+        type: 'screenshot',
+        id: 'step-0203',
+        caption: '在 IDE 源代码管理面板中查看改动并一键发布到 GitHub 仓库',
+      },
+      {
         type: 'callout',
         title: '图形化操作更直观',
         text: '现代 IDE 已经深度集成了 GitHub。设计师只要点选界面按钮，就能像在网盘同步文件一样完成代码版本管理与云端推送，告别复杂的命令行。',
@@ -170,50 +197,50 @@ window.CHAPTERS = [
     slug: 'preview',
     number: '04',
     title: '部署测试环境',
-    summary: '用 Vercel 关联 GitHub 仓库，自动生成随时可打开的测试链接，方便与同事或客户在线验收。',
+    summary: '用 Vercel 或 GitHub Pages 关联 GitHub 仓库，自动生成随时可打开的在线测试链接，方便与同事或客户多端验收。',
     blocks: [
       {
         type: 'lead',
-        text: 'Antigravity IDE 负责产出代码，GitHub 负责安全托管，部署平台（如 Vercel）则负责把代码实时变成网上可交互的网站。',
+        text: 'Antigravity IDE 负责产出代码，GitHub 负责安全托管，部署平台（如 Vercel 或 GitHub Pages）则负责把代码实时变成网上可交互的网站。',
       },
       {
         type: 'step',
         number: '1',
-        title: '连接 GitHub 仓库',
-        body: '打开 vercel.com，用 GitHub 账号登录。在控制台仪表盘选择导入（Import）刚才通过 IDE 上传的仓库项目。',
+        title: '关联 GitHub 仓库',
+        body: '选择 Vercel 或 GitHub Pages 部署测试环境。若使用 Vercel，用 GitHub 账号登录 vercel.com 并导入项目仓库；若使用 GitHub Pages，在 GitHub 仓库 Settings 的 Pages 中指定 main 分支即可。',
       },
       {
         type: 'screenshot',
         id: 'step-09',
-        caption: '在 Vercel 中导入 GitHub 仓库',
+        caption: '在部署平台（如 Vercel 或 GitHub Pages）中关联仓库',
       },
       {
         type: 'step',
         number: '2',
         title: '配置并一键部署',
-        body: '框架和构建命令一般会自动识别。保持默认配置即可，点击开始部署。',
+        body: '静态网页通常无需复杂构建配置，保持默认设置并确认。部署平台将自动读取仓库文件并完成云端构建。',
       },
       {
         type: 'step',
         number: '3',
         title: '获取测试链接',
-        body: '部署完成后，Vercel 会给出一个公开的在线预览网址。将这个链接发给同事或客户进行视觉与交互验收。',
+        body: '部署完成后，平台会给出一个公开的在线预览网址（如 vercel.app 或 github.io 域名）。将链接发给同事或客户进行视觉与交互验收。',
       },
       {
         type: 'screenshot',
         id: 'step-10',
-        caption: '部署完成，复制测试预览链接',
+        caption: '部署完成，复制在线测试预览链接',
       },
       {
         type: 'step',
         number: '4',
         title: '在 IDE 中修改，线上自动重新部署',
-        body: '在 Antigravity IDE 里改完任何设计细节并推送到 GitHub 后，Vercel 会自动侦测到更新并重新部署。稍候刷新测试链接即可看到最新效果。',
+        body: '在 Antigravity IDE 里改完任何设计细节并推送到 GitHub 后，Vercel 或 GitHub Pages 会自动侦测到更新并重新部署。稍候刷新测试链接即可看到最新效果。',
       },
       {
         type: 'callout',
         title: '各工具的分工协作',
-        text: 'Antigravity IDE：修改和调试设计。GitHub：代码托管与版本流转。Vercel：对外可打开的网站。测试链接用来验收，还不是正式域名。',
+        text: 'Antigravity IDE：修改和调试设计。GitHub：代码托管与版本流转。Vercel / GitHub Pages：对外可打开的测试网站。测试链接用来验收，还不是正式独立域名。',
       },
     ],
   },
@@ -240,6 +267,11 @@ window.CHAPTERS = [
         body: '在 GitHub 上创建 Pull Request，审核确认后合并到 main 主分支。确保主分支上的代码就是要对外发布的正式版本。',
       },
       {
+        type: 'screenshot',
+        id: 'step-11',
+        caption: '在 GitHub 上查看分支（如 master、stage、prod）并管理正式版本合并',
+      },
+      {
         type: 'step',
         number: '3',
         title: '部署生产环境',
@@ -250,11 +282,6 @@ window.CHAPTERS = [
         number: '4',
         title: '绑定正式域名',
         body: '在部署平台的 Domains 设置中添加已购买的域名，并按提示前往域名服务商处解析 DNS 记录。生效后即可用正式域名访问。',
-      },
-      {
-        type: 'screenshot',
-        id: 'step-11',
-        caption: '在部署平台绑定正式域名',
       },
       {
         type: 'step',
